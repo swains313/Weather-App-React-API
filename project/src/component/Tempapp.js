@@ -13,7 +13,7 @@ const Tempapp = () => {
 
 
     useEffect(()=>{
-      const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=d3b99b66a3b5f50840624a2372978453` 
+      const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid={API KEY}`  //this API KEY we get https://openweathermap.org/api
       axios.get(url)
       .then((response)=>{
         console.log(response);
